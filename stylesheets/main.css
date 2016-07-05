@@ -1,0 +1,21 @@
+/* line 1, ../sass/settings/_textPalette.sass */
+* {
+  font-family: Helvetica;
+}
+
+/* line 4, ../sass/main.sass */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, ../sass/main.sass */
+header {
+  background-color: #FF3B3F;
+  color: #FFFFFF;
+}
+
+/* line 12, ../sass/main.sass */
+.bodyDiv {
+  background-color: #FFFFFF;
+}
