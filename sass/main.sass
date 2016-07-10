@@ -5,9 +5,46 @@ html, body
 	margin: 0
 	padding: 0
 
+html
+	background-color: $page_margin_color
+
+body
+	max-width: $max_page_width
+	margin: auto
+
 header
 	background-color: $header_background_color
 	color: $header_text_color
+	padding:
+		top: $gap
+		bottom: $gap
+
+	.headerInfo
+		margin: auto
+		width: 100%
+		text-align: center
+
+.tabBox
+	display: flex
+
+	.selectionTab
+		border: $tab_border
+		border-right: 0px
+		color: $tab_text_color
+		background-color: $tab_background
+		padding: $gap
+		margin: 0
+		width: 25%
+		box-sizing: border-box
+		display: inline-block
+		text-align: center
+
+		&.lastTab
+			border-right: $tab_border
+
+		&.selected
+			color: $selected_tab_text_color
+			background-color: $selected_tab_background
 
 .bodyDiv
 	background-color: $page_background_color

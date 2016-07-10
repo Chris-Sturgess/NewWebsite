@@ -10,12 +10,58 @@ html, body {
 }
 
 /* line 8, ../sass/main.sass */
-header {
-  background-color: #FF3B3F;
-  color: #FFFFFF;
+html {
+  background-color: #FFFFFF;
 }
 
-/* line 12, ../sass/main.sass */
+/* line 11, ../sass/main.sass */
+body {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* line 15, ../sass/main.sass */
+header {
+  background-color: #FFFFFF;
+  color: #111111;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/* line 22, ../sass/main.sass */
+header .headerInfo {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 27, ../sass/main.sass */
+.tabBox {
+  display: flex;
+}
+/* line 30, ../sass/main.sass */
+.tabBox .selectionTab {
+  border: 3px solid #111111;
+  border-right: 0px;
+  color: #FFFFFF;
+  background-color: #111111;
+  padding: 8px;
+  margin: 0;
+  width: 25%;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+}
+/* line 42, ../sass/main.sass */
+.tabBox .selectionTab.lastTab {
+  border-right: 3px solid #111111;
+}
+/* line 45, ../sass/main.sass */
+.tabBox .selectionTab.selected {
+  color: #111111;
+  background-color: #FFFFFF;
+}
+
+/* line 49, ../sass/main.sass */
 .bodyDiv {
   background-color: #FFFFFF;
 }
