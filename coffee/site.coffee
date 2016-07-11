@@ -1,13 +1,18 @@
-bodyDivs = document.getElementsByClass('bodyDiv')
+$('document').ready(->
+	bodyDivs = $('.bodyDiv')
 
-hideDivs () ->
-	bodyDivs.style.display = 'none'
+	hideDivs = ->
+		bodyDivs.hide()
 
-showDiv (d) ->
-	document.getElementsByClass(d).style.display = 'block'
+	showDiv = (d) ->
+		hideDivs()
+		bodyDivs.filter(".#{d}").show()
 
-hideDivs()
-showDiv('resumeDiv')
+	showDiv('resumeDiv')
 
-tabs = document.getElementsByClass('selectionTab')
+	$('.tabBox').on('click', '.selectionTab', ->
+		console.log "HAH"
+		showDiv($(this).data('tab')))
 
+	true
+)
