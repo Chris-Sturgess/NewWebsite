@@ -1,5 +1,6 @@
 $('document').ready(->
 	bodyDivs = $('.bodyDiv')
+	selectionTabs = $('.selectionTab')
 
 	hideDivs = ->
 		bodyDivs.hide()
@@ -12,6 +13,8 @@ $('document').ready(->
 
 	$('.tabBox').on('click', '.selectionTab', ->
 		console.log "HAH"
+		selectionTabs.removeClass('selected')
+		$(this).addClass('selected')
 		showDiv($(this).data('tab')))
 
 	true
